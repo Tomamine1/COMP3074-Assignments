@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/hoursInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hours worked"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hourly rate ($)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/taxInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tax rate (%)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Pay"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About" />
+
+    </LinearLayout>
+</ScrollView>
